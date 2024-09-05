@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ablated GPT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> <!-- Link to CSS -->
+</head>
+<body>
+    <div id="chat-container">
+        <div id="conversation"></div>
+        <div id="user-input">
+            <form id="chat-form">
+                <textarea id="user-input-text" name="message" required></textarea><br>
+                <button type="submit">Send</button>
+                <div class="action-buttons">
+                    <button type="button" class="action-button" id="clear-button">Clear Conversation</button>
+                    <button type="button" class="action-button" id="save-button">Save Conversation</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script> <!-- Link to JS -->
+</body>
+</html>

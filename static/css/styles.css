@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background color */
+}
+#chat-container {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align items to the bottom */
+    padding: 20px;
+    overflow: hidden; /* Prevent overflow */
+}
+#conversation {
+    display: flex;
+    flex: 1; /* Take up available space */
+    flex-direction: column; /* Stack messages vertically */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    margin-bottom: 20px; /* Space between conversation and input */
+}
+.message {
+    margin: 5px 0; /* Space between messages */
+    padding: 8px;
+    border-radius: 5px;
+    max-width: 70%; /* Limit the width of messages */
+    word-wrap: break-word; /* Allow long words to break */
+}
+.user-message {
+    background-color: #007bff; /* Blue background for user messages */
+    color: white;
+    align-self: flex-end; /* Align user messages to the right */
+    text-align: right; /* Align text to the right */
+}
+.assistant-message {
+    background-color: #e9ecef; /* Light gray background for assistant messages */
+    color: black;
+    align-self: flex-start; /* Align assistant messages to the left */
+    text-align: left; /* Align text to the left */
+}
+#user-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the input area */
+    width: 100%; /* Full width */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff; /* White background for the input area */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#chat-form {
+    width: 75%;
+    max-width: 800px;
+}
+textarea {
+    width: 100%; /* Full width of the parent container */
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none; /* Disable resizing */
+    max-width: 100%; /* Set max width to 50% of the screen */
+}
+button {
+    width: 100%; /* Full width of the parent container */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px; /* Space between textarea and button */
+    max-width: 100%; /* Set max width to 50% of the screen */
+}
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.action-buttons {
+    display: flex; /* Use flexbox to arrange buttons inline */
+    justify-content: space-between; /* Space between buttons */
+    width: 100%; /* Full width of the parent container */
+    max-width: 100%; /* Allow it to be 100% of the parent */
+    margin-top: 10px; /* Space above the buttons */
+}
+.action-button {
+    margin-top: 0px; /* Space between buttons */
+    background-color: #28a745; /* Green background for action buttons */
+    width: 48%;
+}
+.action-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
