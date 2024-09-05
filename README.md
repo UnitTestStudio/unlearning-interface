@@ -1,6 +1,6 @@
 # Unlearning Interface
 
-This repository serves as an interface for testing models produced as part of the larger project found at [UnitTestStudio/unlearning](https://github.com/UnitTestStudio/unlearning). The ChatGPT style chatbot web-app allows users to interact with and test various language models developed in the unlearning project. 
+The code in this repository serves as an interface for testing models produced as part of the larger project found at [UnitTestStudio/unlearning](https://github.com/UnitTestStudio/unlearning). The ChatGPT style chatbot web-app allows users to interact with and test various language models developed in the unlearning project. 
 
 The application is built with Flask for the backend and uses HTML, CSS, and JavaScript for the frontend, providing a user-friendly chat interface to facilitate model testing and evaluation.
 
